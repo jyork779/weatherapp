@@ -2,9 +2,24 @@
 <html>
 <head>
   <title>WeatherApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+
+      <!-- MDL stylesheet -->
+      <%= stylesheet_link_tag 'https://storage.googleapis.com/code.getmdl.io/1.0.6/material.cyan-orange.min.css' %>
+      <%= stylesheet_link_tag 'https://fonts.googleapis.com/icon?family=Material+Icons' %>
+
+      <!-- App stylesheet -->
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+      <!-- MDL JS -->
+      <%= javascript_include_tag 'https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js' %>
+      <!-- App JS -->
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+      <%= csrf_meta_tags %>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 </head>
 <body>
 
